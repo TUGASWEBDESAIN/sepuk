@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(seblak.webp);
+    background-position: center;
+    background-size: cover;
+}
+.contanier{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+}
+.contanier nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contanier nav .logo{
+    width: 90px;
+    cursor: pointer;
+} 
+.contanier nav ul li{
+    display: inline-block;
+    margin-right: 50px;    
+}
+.contanier nav ul li:last-child{
+    margin-right: 0;
+}
+.contanier nav ul li a{
+    text-decoration: none;
+    color: #Fff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.contanier nav ul li a:hover{
+    color: #e7434b
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+.content .title h1{
+    color: rgba(255, 255, 255, 0.2);
+    background: url(fire.jpeg) repeat-x;
+    -webkit-background-clip: text;
+    background-size: contain;
+    animation: fire 15s linear infinite;
+}
+@keyframes fire{
+    0%{
+        background-position: left 0 top 25px;
+    }
+    50%{
+        background-position: left 130px top -35px;
+    }
+    100%{
+        background-position: left 250px top 0;
+    }
+}
+.contanier .title img{
+    width: 80px;
+    transform: rotate(20deg);
+}
+.contanier .text{
+    text-align: center;
+}
+.contanier .text h4{
+    color: #c1c1c1;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.contanier .text .btn{
+    text-decoration: none;
+    color:#Fff;
+    background-color: #ea1923;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+.contanier .text .btn:hover{
+    background-color: #Fff
+    color: #ea1923;
+}
+.contanier .text form{
